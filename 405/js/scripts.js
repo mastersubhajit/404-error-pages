@@ -85,7 +85,7 @@ $(document).ready(function() {
     // SVG Child With Box
     if (document.getElementById('child-with-box-svg')) {
         var svg = Snap("#child-with-box-svg");
-        Snap.load("assets/img/404-child-with-box.svg", function(f) {
+        Snap.load("img/404-child-with-box.svg", function(f) {
             g = f.select("g");
             g.attr({
                 transform: 't0,0 s1'
@@ -97,7 +97,7 @@ $(document).ready(function() {
     // SVG TV
     if (document.getElementById('tv-svg')) {
         var svg = Snap("#tv-svg");
-        Snap.load("/master-portfolio/405/img/tv.svg", function(f) {
+        Snap.load("img/tv.svg", function(f) {
             g = f.select("g");
             g.attr({
                 transform: 't0,0 s1'
@@ -109,7 +109,7 @@ $(document).ready(function() {
     // SVG Screen TV
     if (document.getElementById('screen-svg')) {
         var svg1 = Snap("#screen-svg");
-        Snap.load("/master-portfolio/405/img/screen.svg", function(f) {
+        Snap.load("img/screen.svg", function(f) {
             g = f.select("g");
             g.attr({
                 transform: 't0,0 s1'
@@ -133,7 +133,7 @@ $(document).ready(function() {
     // SVG Crocodile
     if (document.getElementById('crocodile-svg')) {
         var svg = Snap("#crocodile-svg");
-        Snap.load("/master-portfolio/406/img/crocodile.svg", function(f) {
+        Snap.load("img/crocodile.svg", function(f) {
             g = f.select("g");
             g.attr({
                 transform: 't0,0 s1'

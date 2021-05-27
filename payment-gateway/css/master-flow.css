@@ -3198,7 +3198,7 @@ textarea.w-select {
     right: 1.5em;
     bottom: 1.5em;
     z-index: 4;
-    background-image: url("/master-portfolio/payment-gateway/img/QR-black-only.svg");
+    background-image: url("payment-gateway/img/QR-black-only.svg");
     background-position: 50% 50%;
     background-size: cover;
 }

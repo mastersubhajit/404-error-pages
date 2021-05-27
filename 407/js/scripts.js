@@ -121,7 +121,7 @@ $(document).ready(function() {
     // SVG Saw
     if (document.getElementById('saw-svg')) {
         var svg = Snap("#saw-svg");
-        Snap.load("/master-portfolio/407/img/saw.svg", function(f) {
+        Snap.load("img/saw.svg", function(f) {
             g = f.select("g");
             g.attr({
                 transform: 't0,0 s1'

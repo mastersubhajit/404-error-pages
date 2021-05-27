@@ -61,7 +61,7 @@ $(document).ready(function() {
     // SVG Astronaut
     if (document.getElementById('astronaut-error')) {
         var svg = Snap("#astronaut-error");
-        Snap.load("/master-portfolio/404/img/astronaut.svg", function(f) {
+        Snap.load("../../404/img/astronaut.svg", function(f) {
             g = f.select("g");
             g.attr({
                 transform: 't0,0 s1'

@@ -133,7 +133,7 @@ $(document).ready(function() {
     // SVG Crocodile
     if (document.getElementById('crocodile-svg')) {
         var svg = Snap("#crocodile-svg");
-        Snap.load("/master-portfolio/406/img/crocodile.svg", function(f) {
+        Snap.load("img/crocodile.svg", function(f) {
             g = f.select("g");
             g.attr({
                 transform: 't0,0 s1'

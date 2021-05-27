@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="227" viewBox="0 0 360 227">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FAFAFA" stroke="#CECECE" stroke-width="2" d="M1 1H359V226H1z"/>
+        <g stroke="#000" stroke-width="2">
+            <path fill="#FFF" d="M1 1H108V74H1z" transform="translate(85.81 116.914)"/>
+            <path d="M0 1.193L54 39.193 108 1.193" transform="translate(85.81 116.914)"/>
+        </g>
+        <g stroke="#000" stroke-width="2">
+            <path fill="#F1F1F1" d="M1 1H108V74H1z" transform="translate(101.81 101.914)"/>
+            <path d="M0 1.193L54 39.193 108 1.193" transform="translate(101.81 101.914)"/>
+        </g>
+        <g stroke="#000" stroke-width="2">
+            <path fill="#CECECE" d="M1 1H108V74H1z" transform="translate(120.81 84.914)"/>
+            <path d="M0 1.193L54 39.193 108 1.193" transform="translate(120.81 84.914)"/>
+        </g>
+        <g stroke="#000" stroke-width="2">
+            <path fill="#ACACAC" d="M1 1H108V74H1z" transform="translate(139.81 70.914)"/>
+            <path d="M0 1.193L54 39.193 108 1.193" transform="translate(139.81 70.914)"/>
+        </g>
+        <circle cx="286.809" cy="165.914" r="29" fill="#CECECE"/>
+        <g stroke="#FFF" stroke-width="2">
+            <path fill="#000" d="M1 1H108V74H1z" transform="translate(161.81 53.914)"/>
+            <path d="M0 1.193L54 39.193 108 1.193" transform="translate(161.81 53.914)"/>
+        </g>
+        <g stroke="#000" stroke-width="2">
+            <path fill="#E2E2E2" d="M1 1H57V39H1z" transform="translate(66.81 36.914)"/>
+            <path d="M0 1L28.5 21 57 1" transform="translate(66.81 36.914)"/>
+        </g>
+        <path stroke="#000" stroke-width="2" d="M14.241 148.147c15.084-33.871 16.912-49.871 5.483-48-17.142 2.807 7.082 30.04 34.796 6.423M324.915 29L324.915 81.468 304.438 60.99"/>
+    </g>
+</svg>

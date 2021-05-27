@@ -1,0 +1,339 @@
+/* ------------------------------------------------------------------
+
+[Master Stylesheet]
+
+Project: UkieWorld 404
+Version: 1.0
+Last change: 10/09/16
+Author:  UKIE WEB
+Theme: Animated Balloon Fly
+
+
+[Table of contents]
+
+   1. - General setting
+   2. - Animation
+
+------------------------------------------------------------------ */
+
+/* ------------------
+    General setting
+--------------------*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fb;
+}
+
+a,
+a:hover,
+a:visited {
+    text-decoration: none;
+}
+
+.btn {
+    color: #fefefe;
+    background-color: #df5728;
+    line-height: 38px;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 0;
+    margin-right: 10px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+    color: #fefefe;
+    background-color: #c44c23;
+}
+
+.btn i {
+    line-height: 24px;
+    margin-right: 5px;
+    font-size: 10px;
+}
+
+.error-page {
+    padding-top: 0;
+    text-align: center;
+    display: block;
+    margin: 0 auto auto;
+}
+
+.no-found {
+    color: #313131;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.error-text {
+    color: #313131;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 50%;
+    margin: 30px auto;
+}
+
+.uf-copyright {
+    font-size: 10px;
+}
+
+.copyright {
+    color: #c7c7c7;
+    font-weight: 300;
+    line-height: 24px;
+    bottom: 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.error {
+    color: #eaebed;
+    font-size: 250px;
+    font-weight: 700;
+    line-height: 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -312px;
+    z-index: 1;
+    top: 50%;
+    margin-top: -125px;
+}
+
+/* ------------------
+    Animation
+--------------------*/
+
+#balloon-svg {
+    width: 319px;
+    height: 491px;
+    z-index: 2;
+    position: relative;
+}
+
+/* Animated balloon */
+
+#balloon {
+    z-index: 1;
+    animation: balloon 6s 1 linear;
+    animation-fill-mode: forwards;
+    transform-origin: 0% 100%;
+    -moz-animation: balloon 6s 1 linear;
+    -moz-animation-fill-mode: forwards;
+    -moz-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+}
+
+@keyframes balloon {
+    0% {
+        transform: translate(0);
+    }
+    80% {
+        transform: translate(0, -202px);
+    }
+    100% {
+        transform: translate(0, -202px);
+    }
+}
+
+@-moz-keyframes balloon {
+    0% {
+        -moz-transform: translate(0);
+    }
+    80% {
+        -moz-transform: translate(0, -202px);
+    }
+    100% {
+        -moz-transform: translate(0, -202px);
+    }
+}
+
+/* Animated zero */
+
+#zero {
+    z-index: 1;
+    animation: zero 6s 1 linear;
+    transform-origin: 0% 100%;
+    -moz-animation: zero 6s 1 linear;
+    -moz-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+}
+
+@keyframes zero {
+    0% {
+        transform: translate(0);
+    }
+    80% {
+        transform: translate(0, -202px);
+    }
+    83% {
+        transform: translate(0, 0);
+    }
+    86% {
+        transform: translate(0, -10px);
+    }
+    90% {
+        transform: translate(0);
+    }
+}
+
+@-moz-keyframes zero {
+    0% {
+        -moz-transform: translate(0);
+    }
+    80% {
+        -moz-transform: translate(0, -202px);
+    }
+    83% {
+        -moz-transform: translate(0, 0);
+    }
+    86% {
+        -moz-transform: translate(0, -10px);
+    }
+    90% {
+        -moz-transform: translate(0);
+    }
+}
+
+/* Animated shadow */
+
+#shadow {
+    z-index: 1;
+    animation: shadow 6s 1 linear;
+    transform-origin: 50% 50%;
+    -moz-animation: shadow 6s 1 linear;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 50%;
+}
+
+@keyframes shadow {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(0);
+    }
+    80% {
+        transform: scale(0);
+    }
+    83% {
+        transform: scale(0.9);
+    }
+    86% {
+        transform: scale(0.95);
+    }
+    90% {
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes shadow {
+    0% {
+        -moz-transform: scale(1);
+    }
+    20% {
+        -moz-transform: scale(0);
+    }
+    80% {
+        -moz-transform: scale(0);
+    }
+    83% {
+        -moz-transform: scale(0.9);
+    }
+    86% {
+        -moz-transform: scale(0.95);
+    }
+    90% {
+        -moz-transform: scale(1);
+    }
+}
+
+/* ------------------
+    Media Query
+--------------------*/
+
+@media screen and (max-width: 650px) {
+    .error {
+        margin-left: -224px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .error {
+        margin-left: -124px;
+    }
+}
+
+@media (max-width: 992px) {
+    .copyright {
+        margin: 30px auto 0;
+        bottom: inherit;
+        padding: 0 15px 30px 15px;
+        position: relative;
+        width: 80%;
+        display: block;
+    }
+    .error-text {
+        width: 100%;
+    }
+    .no-found {
+        line-height: 56px;
+    }
+}
+
+@media (max-width: 650px) {
+    .error {
+        font-size: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .no-found {
+        line-height: 50px;
+        font-size: 46px;
+        margin-top: 20px;
+    }
+    .error-text {
+        margin: 20px auto;
+    }
+    .error {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .error-page {
+        padding-top: 20vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .error-page {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #all-balloon {
+        transform: matrix(0.85, 0, 0, 0.85, 0, 0);
+    }
+    .error-page {
+        margin-top: -80px;
+    }
+    #balloon-svg {
+        width: 271px;
+        height: 417px;
+    }
+}

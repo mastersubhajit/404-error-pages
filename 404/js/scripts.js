@@ -61,7 +61,7 @@ $(document).ready(function() {
     // SVG Astronaut
     if (document.getElementById('astronaut-error')) {
         var svg = Snap("#astronaut-error");
-        Snap.load("img/astronaut.svg", function(f) {
+        Snap.load(" img/astronaut.svg", function(f) {
             g = f.select("g");
             g.attr({
                 transform: 't0,0 s1'
@@ -133,7 +133,7 @@ $(document).ready(function() {
     // SVG Crocodile
     if (document.getElementById('crocodile-svg')) {
         var svg = Snap("#crocodile-svg");
-        Snap.load("img/crocodile.svg", function(f) {
+        Snap.load("assets/img/crocodile.svg", function(f) {
             g = f.select("g");
             g.attr({
                 transform: 't0,0 s1'

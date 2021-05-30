@@ -3542,7 +3542,7 @@
             /\.webflow\.io$/i.test(p) && c.hostname !== p && (u = !0), u && !s && (e = e || (n = t('<a class="w-webflow-badge"></a>').attr("href", "https://mastersubhajit.com"), r = t("<img>").attr("src", "assets/img/favicon.svg").attr("alt", "").css({
                 marginRight: "8px",
                 width: "16px"
-            }), a = t("<img>").attr("src", "").attr("alt", "Designed By Subhajit"), n.append(r, a), n[0]), d(), setTimeout(d, 500), t(i).off(f, l).on(f, l))
+            }), a = t("<img>").attr("src", "").attr("alt", ""), n.append(r, a), n[0]), d(), setTimeout(d, 500), t(i).off(f, l).on(f, l))
         }, n
     })
 }, function(t, e, n) {

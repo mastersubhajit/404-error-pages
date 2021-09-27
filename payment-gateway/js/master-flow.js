@@ -12039,7 +12039,7 @@
         return r.ready = function() {
             var r, n, s, o = a.attr("data-wf-status"),
                 p = a.attr("data-wf-domain") || "";
-            /\.webflow\.io$/i.test(p) && l.hostname !== p && (o = !0), o && !h && (e = e || (r = t('<a class="w-webflow-badge"></a>').attr("href", "https://www.mastersubhajit.com"), n = t("<img>").attr("src", "img/favicon.svg").attr("alt", "").css({
+            /\.webflow\.io$/i.test(p) && l.hostname !== p && (o = !0), o && !h && (e = e || (r = t('<a class="w-webflow-badge"></a>').attr("href", "https://www.mastersubhajit.com"), n = t("<img>").attr("src", "https://mastersubhajit.com/assets/favicon.ico").attr("alt", "").css({
                 marginRight: "8px",
                 width: "16px"
             }), s = t("alt").attr("src","Designed By Subhajit").attr("alt", "Designed By Subhajit"), r.append(n, s), r[0]), f(), setTimeout(f, 500), t(i).off(c, u).on(c, u))

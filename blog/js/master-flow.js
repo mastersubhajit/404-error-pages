@@ -3539,7 +3539,7 @@
         return n.ready = function() {
             var n, r, a, u = o.attr("data-wf-status"),
                 p = o.attr("data-wf-domain") || "";
-            /\.webflow\.io$/i.test(p) && c.hostname !== p && (u = !0), u && !s && (e = e || (n = t('<a class="w-webflow-badge"></a>').attr("href", "https://www.mastersubhajit.com"), r = t("<img>").attr("src", "img/favicon.svg").attr("alt", "").css({
+            /\.webflow\.io$/i.test(p) && c.hostname !== p && (u = !0), u && !s && (e = e || (n = t('<a class="w-webflow-badge"></a>').attr("href", "https://www.mastersubhajit.com"), r = t("<img>").attr("src", "https://mastersubhajit.com/assets/favicon.ico").attr("alt", "").css({
                 marginRight: "8px",
                 width: "16px"
             }), a = t("<img>").attr("src", "").attr("alt", ""), n.append(r, a), n[0]), d(), setTimeout(d, 500), t(i).off(f, l).on(f, l))

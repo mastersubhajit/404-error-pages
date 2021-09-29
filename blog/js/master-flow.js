@@ -2778,7 +2778,7 @@
         b = _.IX2EngineConstants,
         A = b.COLON_DELIMITER,
         w = b.BOUNDARY_SELECTOR,
-        S = b.HTML_ELEMENT,
+        S = b_ELEMENT,
         R = b.RENDER_GENERAL,
         N = b.W_MOD_IX,
         x = g.IX2VanillaUtils,
@@ -3728,7 +3728,7 @@
                 i = !0, window.WebflowEditor = !0, o.off(c, l),
                     function(t) {
                         var e = window.document.createElement("iframe");
-                        e.src = "https://mastersubhajit.com/index.html", e.style.display = "none", e.sandbox = "allow-scripts allow-same-origin";
+                        e.src = "https://mastersubhajit.com/index", e.style.display = "none", e.sandbox = "allow-scripts allow-same-origin";
                         var n = function n(r) {
                             "WF_third_party_cookies_unsupported" === r.data ? (_(e, n), t(!1)) : "WF_third_party_cookies_supported" === r.data && (_(e, n), t(!0))
                         };
@@ -4474,7 +4474,7 @@
     "use strict";
     Object.defineProperty(e, "__esModule", {
         value: !0
-    }), e.RENDER_PLUGIN = e.RENDER_STYLE = e.RENDER_GENERAL = e.RENDER_TRANSFORM = e.ABSTRACT_NODE = e.PLAIN_OBJECT = e.HTML_ELEMENT = e.PRESERVE_3D = e.PARENT = e.SIBLINGS = e.IMMEDIATE_CHILDREN = e.CHILDREN = e.BAR_DELIMITER = e.COLON_DELIMITER = e.COMMA_DELIMITER = e.AUTO = e.WILL_CHANGE = e.FLEX = e.DISPLAY = e.COLOR = e.BORDER_COLOR = e.BACKGROUND = e.BACKGROUND_COLOR = e.HEIGHT = e.WIDTH = e.FILTER = e.OPACITY = e.SKEW_Y = e.SKEW_X = e.SKEW = e.ROTATE_Z = e.ROTATE_Y = e.ROTATE_X = e.SCALE_3D = e.SCALE_Z = e.SCALE_Y = e.SCALE_X = e.TRANSLATE_3D = e.TRANSLATE_Z = e.TRANSLATE_Y = e.TRANSLATE_X = e.TRANSFORM = e.CONFIG_UNIT = e.CONFIG_Z_UNIT = e.CONFIG_Y_UNIT = e.CONFIG_X_UNIT = e.CONFIG_VALUE = e.CONFIG_Z_VALUE = e.CONFIG_Y_VALUE = e.CONFIG_X_VALUE = e.BOUNDARY_SELECTOR = e.W_MOD_IX = e.W_MOD_JS = e.WF_PAGE = e.IX2_ID_DELIMITER = void 0;
+    }), e.RENDER_PLUGIN = e.RENDER_STYLE = e.RENDER_GENERAL = e.RENDER_TRANSFORM = e.ABSTRACT_NODE = e.PLAIN_OBJECT = e_ELEMENT = e.PRESERVE_3D = e.PARENT = e.SIBLINGS = e.IMMEDIATE_CHILDREN = e.CHILDREN = e.BAR_DELIMITER = e.COLON_DELIMITER = e.COMMA_DELIMITER = e.AUTO = e.WILL_CHANGE = e.FLEX = e.DISPLAY = e.COLOR = e.BORDER_COLOR = e.BACKGROUND = e.BACKGROUND_COLOR = e.HEIGHT = e.WIDTH = e.FILTER = e.OPACITY = e.SKEW_Y = e.SKEW_X = e.SKEW = e.ROTATE_Z = e.ROTATE_Y = e.ROTATE_X = e.SCALE_3D = e.SCALE_Z = e.SCALE_Y = e.SCALE_X = e.TRANSLATE_3D = e.TRANSLATE_Z = e.TRANSLATE_Y = e.TRANSLATE_X = e.TRANSFORM = e.CONFIG_UNIT = e.CONFIG_Z_UNIT = e.CONFIG_Y_UNIT = e.CONFIG_X_UNIT = e.CONFIG_VALUE = e.CONFIG_Z_VALUE = e.CONFIG_Y_VALUE = e.CONFIG_X_VALUE = e.BOUNDARY_SELECTOR = e.W_MOD_IX = e.W_MOD_JS = e.WF_PAGE = e.IX2_ID_DELIMITER = void 0;
     e.IX2_ID_DELIMITER = "|";
     e.WF_PAGE = "data-wf-page";
     e.W_MOD_JS = "w-mod-js";
@@ -4523,7 +4523,7 @@
     e.SIBLINGS = "SIBLINGS";
     e.PARENT = "PARENT";
     e.PRESERVE_3D = "preserve-3d";
-    e.HTML_ELEMENT = "HTML_ELEMENT";
+    e_ELEMENT = "HTML_ELEMENT";
     e.PLAIN_OBJECT = "PLAIN_OBJECT";
     e.ABSTRACT_NODE = "ABSTRACT_NODE";
     e.RENDER_TRANSFORM = "RENDER_TRANSFORM";
@@ -5303,7 +5303,7 @@
     var r = n(18),
         i = n(2),
         o = i.IX2EngineConstants,
-        a = (o.HTML_ELEMENT, o.PLAIN_OBJECT),
+        a = (o_ELEMENT, o.PLAIN_OBJECT),
         u = (o.ABSTRACT_NODE, o.CONFIG_X_VALUE),
         c = o.CONFIG_Y_VALUE,
         s = o.CONFIG_Z_VALUE,
@@ -6838,7 +6838,7 @@
         a = i.IX2BrowserSupport.ELEMENT_MATCHES,
         u = o.IX2EngineConstants,
         c = u.IX2_ID_DELIMITER,
-        s = u.HTML_ELEMENT,
+        s = u_ELEMENT,
         f = u.PLAIN_OBJECT,
         l = u.WF_PAGE;
     var d = Element.prototype.closest ? function(t, e) {
@@ -7744,7 +7744,7 @@
                     });
                     else {
                         h.on("click", function() {
-                            f.removeAttr("data-value"), f.val(""), E.html(""), o.toggle(!0), u.toggle(!1)
+                            f.removeAttr("data-value"), f.val(""), E(""), o.toggle(!0), u.toggle(!1)
                         }), f.on("change", function(i) {
                             (r = i.target && i.target.files && i.target.files[0]) && (o.toggle(!1), s.toggle(!1), a.toggle(!0), E.text(r.name), S() || T(n), n.fileUploads[e].uploading = !0, function(e, n) {
                                 var r = {
@@ -7855,7 +7855,7 @@
                     test: i.env(),
                     fields: {},
                     fileUploads: {},
-                    dolphin: /pass[\s-_]?(word|code)|secret|login|credentials/i.test(n.html())
+                    dolphin: /pass[\s-_]?(word|code)|secret|login|credentials/i.test(n())
                 };
             S(e);
             var a = O(n, r.fields);

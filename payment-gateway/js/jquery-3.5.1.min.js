@@ -1510,7 +1510,7 @@
             if ((o = e[d]) || 0 === o)
                 if ("object" === w(o)) S.merge(p, o.nodeType ? [o] : o);
                 else if (me.test(o)) {
-            a = a || f.appendChild(t.createElement("div")), s = (de.exec(o) || ["", ""])[1].toLowerCase(), u = ge[s] || ge._default, a.innerHTML = u[1] + S.htmlPrefilter(o) + u[2], c = u[0];
+            a = a || f.appendChild(t.createElement("div")), s = (de.exec(o) || ["", ""])[1].toLowerCase(), u = ge[s] || ge._default, a.innerHTML = u[1] + SPrefilter(o) + u[2], c = u[0];
             while (c--) a = a.lastChild;
             S.merge(p, a.childNodes), (a = f.firstChild).textContent = ""
         } else p.push(t.createTextNode(o));
@@ -1825,7 +1825,7 @@
             h = m(d);
         if (h || 1 < f && "string" == typeof d && !y.checkClone && De.test(d)) return n.each(function(e) {
             var t = n.eq(e);
-            h && (r[0] = d.call(this, e, t.html())), Pe(t, r, i, o)
+            h && (r[0] = d.call(this, e, t())), Pe(t, r, i, o)
         });
         if (f && (t = (e = xe(r, n[0].ownerDocument, !1, n, o)).firstChild, 1 === e.childNodes.length && (e = t), t || o)) {
             for (s = (a = S.map(ve(e, "script"), Le)).length; c < f; c++) u = e, c !== p && (u = S.clone(u, !0, !0), s && S.merge(a, ve(u, "script"))), i.call(n[c], u, c);
@@ -1920,7 +1920,7 @@
                     r = this.length;
                 if (void 0 === e && 1 === t.nodeType) return t.innerHTML;
                 if ("string" == typeof e && !Ne.test(e) && !ge[(de.exec(e) || ["", ""])[1].toLowerCase()]) {
-                    e = S.htmlPrefilter(e);
+                    e = SPrefilter(e);
                     try {
                         for (; n < r; n++) 1 === (t = this[n] || {}).nodeType && (S.cleanData(ve(t, !1)), t.innerHTML = e);
                         t = 0
@@ -3114,7 +3114,7 @@
             dataType: "html",
             data: t
         }).done(function(e) {
-            o = arguments, a.html(r ? S("<div>").append(S.parseHTML(e)).find(r) : e)
+            o = arguments, a(r ? S("<div>").append(S.parseHTML(e)).find(r) : e)
         }).always(n && function(e, t) {
             a.each(function() {
                 n.apply(this, o || [e.responseText, t, e])

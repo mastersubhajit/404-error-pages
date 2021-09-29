@@ -44,7 +44,7 @@ window.Modernizr = function(a, b, c) {
         function J() {
             e.input = function(c) {
                 for (var d = 0, e = c.length; d < e; d++) u[c[d]] = c[d] in k;
-                return u.list && (u.list = !!b.createElement("datalist") && !!aDataListElement), u
+                return u.list && (u.list = !!b.createElement("datalist") && !!a.HTMLDataListElement), u
             }("autocomplete autofocus list placeholder max min multiple pattern required step".split(" ")), e.inputtypes = function(a) {
                 for (var d = 0, e, f, h, i = a.length; d < i; d++) k.setAttribute("type", f = a[d]), e = k.type !== "text", e && (k.value = l, k.style.cssText = "position:absolute;visibility:hidden;", /^range$/.test(f) && k.style.WebkitAppearance !== c ? (g.appendChild(k), h = b.defaultView, e = h.getComputedStyle && h.getComputedStyle(k, null).WebkitAppearance !== "textfield" && k.offsetHeight !== 0, g.removeChild(k)) : /^(search|tel)$/.test(f) || (/^(url|email)$/.test(f) ? e = k.checkValidity && k.checkValidity() === !1 : e = k.value != l)), t[a[d]] = !!e;
                 return t
@@ -304,7 +304,7 @@ window.Modernizr = function(a, b, c) {
                     return s.shivCSS && !g && !c.hasCSS && (c.hasCSS = !!l(a, "article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")), k || q(a, c), a
                 }
                 var c = "3.7.0",
-                    d = a5 || {},
+                    d = a.html5 || {},
                     e = /^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,
                     f = /^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,
                     g, h = "_html5shiv",
@@ -334,7 +334,7 @@ window.Modernizr = function(a, b, c) {
                     createElement: o,
                     createDocumentFragment: p
                 };
-                a5 = s, r(b)
+                a.html5 = s, r(b)
             }(this, b), e._version = d, e._prefixes = n, e._domPrefixes = q, e._cssomPrefixes = p, e.hasEvent = z, e.testProp = function(a) {
                 return G([a])
             }, e.testAllProps = I, e.testStyles = y, g.className = g.className.replace(/(^|\s)no-js(\s|$)/, "$1$2") + (f ? " js " + v.join(" ") : ""), e

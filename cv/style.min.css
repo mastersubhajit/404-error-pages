@@ -3413,7 +3413,7 @@ body:not(.fl-builder-edit) .hr__title-bar--student-developer-2018 .fl-rich-text 
 .hr__logo:after {
     content: '';
     display: block;
-    background-image: url("https://mastersubhajit.com/assets/logo.svg");
+    background-image: url("https://mastersubhajit.com/assets/favicon.svg");
     background-repeat: no-repeat;
     background-position: left center;
     background-size: auto 100%;

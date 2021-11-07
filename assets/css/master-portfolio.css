@@ -2375,7 +2375,7 @@ figcaption {
 }
 
 .nav-logo {
-    width: 46px;
+    width: 100px;
     height: 100%;
     padding-top: 5px;
     -o-object-fit: contain;
